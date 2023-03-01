@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Day1: Html Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <form id="form" onsubmit="return false;">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br>
+ 
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+
+            <label for="contact">Conatct: </label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}"><br>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age"><br>
+
+            <button onclick="showTable()">Submit</button>
+        </form>
+
+        <table id="myTable" style="display: none;" class="border">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Conatct</th>
+                <th>Age</th>
+            </tr>
+         </table>
+
+        </body
+        ><script src="index.js"></script>
+        
+    </body>
+</html>
